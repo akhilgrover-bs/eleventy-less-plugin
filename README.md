@@ -1,4 +1,4 @@
-# eleventy-plugin-less
+# eleventy-less-plugin
 
 An [Eleventy](https://www.11ty.dev/) plugin that compiles [LESS](https://lesscss.org/) files to CSS before every build and watched rebuild. Supports multiple input/output pairs, an optional CSS plugin pipeline (Autoprefixer, PurgeCSS, or custom transforms), CleanCSS compatibility processing, minification, and custom output naming.
 
@@ -18,7 +18,7 @@ An [Eleventy](https://www.11ty.dev/) plugin that compiles [LESS](https://lesscss
 ## Installation
 
 ```sh
-npm install eleventy-plugin-less
+npm install eleventy-less-plugin
 ```
 
 Install optional peer dependencies only for the plugins you use:
@@ -36,7 +36,7 @@ npm install purgecss
 ### ESM config (`eleventy.config.js`)
 
 ```js
-import { eleventyLessPlugin } from 'eleventy-plugin-less';
+import { eleventyLessPlugin } from 'eleventy-less-plugin';
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyLessPlugin, {
@@ -53,7 +53,7 @@ export default function (eleventyConfig) {
 ### CommonJS config (`.eleventy.js`)
 
 ```js
-const { eleventyLessPlugin } = require('eleventy-plugin-less');
+const { eleventyLessPlugin } = require('eleventy-less-plugin');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyLessPlugin, {

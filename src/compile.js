@@ -242,5 +242,3 @@ export async function compileLess(pluginOptions) {
 
   await Promise.all(builds.map((build) => processBuild(build, pluginOptions)));
 }
-ap((build) => processBuild(build, pluginOptions)));
-}
