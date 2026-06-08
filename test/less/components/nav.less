@@ -1,0 +1,21 @@
+@nav-bg: #333;
+@nav-link-color: #fff;
+
+nav {
+  background: @nav-bg;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  a {
+    color: @nav-link-color;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    &:hover {
+      background: lighten(@nav-bg, 10%);
+    }
+  }
+}
