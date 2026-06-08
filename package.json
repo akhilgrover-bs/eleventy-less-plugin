@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-plugin-less",
+  "name": "eleventy-less-plugin",
   "version": "1.0.0",
   "description": "Eleventy plugin to compile LESS files to CSS with CleanCSS compatibility processing and minification",
   "type": "module",
