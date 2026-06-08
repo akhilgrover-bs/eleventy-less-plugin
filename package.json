@@ -12,6 +12,11 @@
       "types": "./index.d.ts"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akhilgrover-bs/eleventy-less-plugin.git"
+  },
+  "homepage": "https://github.com/akhilgrover-bs/eleventy-less-plugin#readme",
   "types": "./index.d.ts",
   "files": [
     "index.js",
