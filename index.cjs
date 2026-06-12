@@ -60,6 +60,15 @@ function eleventyLessPlugin(eleventyConfig, options = {}) {
     await compileLess(options);
   }
 
+  // Register every input glob/path as an Eleventy watch target so that
+  // changes to .less files trigger a watched rebuild (and thus beforeWatch).
+  for (const build of (options.builds ?? [])) {
+    const inputs = Array.isArray(build.input) ? build.input : [build.input];
+    for (const pattern of inputs) {
+      eleventyConfig.addWatchTarget(pattern);
+    }
+  }
+
   // Runs once before the initial build
   eleventyConfig.on('eleventy.before', compile);
 
